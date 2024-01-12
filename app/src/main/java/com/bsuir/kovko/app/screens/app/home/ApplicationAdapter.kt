@@ -95,7 +95,8 @@ class ApplicationAdapter(
         val popupMenu = PopupMenu(v.context, v)
         val context = v.context
         val app = v.tag as ApplicationAnswerDTO
-        popupMenu.menu.add(0, COPY_CHECK, Menu.NONE, context.getString(R.string.COPY_CHECK))
+        if(app.status != "Отклонена")
+            popupMenu.menu.add(0, COPY_CHECK, Menu.NONE, context.getString(R.string.COPY_CHECK))
         popupMenu.menu.add(0, COPY_IDENTIFIER, Menu.NONE, context.getString(R.string.COPY_IDENTIFIER))
         if(app.status == "Принята"){
             if (Application.number == app.number)
