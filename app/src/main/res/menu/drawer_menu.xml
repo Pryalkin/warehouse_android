@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group >
+        <item android:title="Главная"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/homeFragment"
+            />
+        <item android:title="Кабинет"
+            android:icon="@drawable/ic_cabinet"
+            app:showAsAction="never"
+            android:id="@+id/cabinetFragment"
+            />
+        <item android:title="Выйти"
+            android:icon="@drawable/ic_logout"
+            app:showAsAction="never"
+            android:id="@+id/logoutFragment"
+            />
+    </group>
+
+</menu>
